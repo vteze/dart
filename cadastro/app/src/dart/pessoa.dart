@@ -9,7 +9,7 @@ class Pessoa {
   String get nome => this._nome;
   String get sexo => this._sexo.toUpperCase();
   int get idade => this._idade;
-  int get salario => this._salario;
+  double get salario => this._salario;
 
   @override
   String toString () => '''
