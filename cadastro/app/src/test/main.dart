@@ -12,4 +12,7 @@ void main() {
 
   print(cadastro.nomes);
   print(cadastro.verificarSexo());
+  print(cadastro.idadeMediaMulheres());
+  print(cadastro.idadeMediaHomens());
+  print(cadastro.salarioMedio());
 }
