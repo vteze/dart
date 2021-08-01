@@ -1,8 +1,8 @@
 class Pessoa {
   String _nome;
   String _sexo;
-  var _idade;
-  var _salario;
+  int _idade;
+  double _salario;
 
   Pessoa (this._nome, this._sexo, this._idade, this._salario);
 
