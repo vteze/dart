@@ -62,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      floatingActionButton: Row(
+      floatingActionButton: Column(
     mainAxisAlignment: MainAxisAlignment.end,
     children: <Widget>[
       FloatingActionButton(
