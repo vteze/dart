@@ -68,7 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
       FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
-        child: Icon(Icons.add),
+        child: Icon(Icons.arrow_upward_sharp),
       ),
       SizedBox(
     width: 10.0,// This trailing comma makes auto-formatting nicer for build methods.
@@ -76,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
     FloatingActionButton(
     onPressed: _decrementCounter,
     tooltip: 'Decrement',
-    child: Icon(Icons.remove),
+    child: Icon(Icons.arrow_downward_sharp),
     ),
     ],
     ),
