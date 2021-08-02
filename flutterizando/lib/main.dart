@@ -28,17 +28,18 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  int _counterInc = 0;
+  int _counterDec = 0;
 
   void _incrementCounter() {
     setState(() {
-      _counter++;
+      _counterInc++;
     });
   }
 
   void _decrementCounter() {
     setState(() {
-      _counter--;
+      _counterDec++;
     });
   }
 
@@ -53,16 +54,23 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'You have pushed the button this many times:',
+              'You have pushed the increment this times: ',
             ),
             Text(
-              '$_counter',
+              '$_counterInc',
+              style: Theme.of(context).textTheme.headline4,
+            ),
+            Text(
+              'You have pushed the decrement this times: ',
+            ),
+            Text(
+              '$_counterDec',
               style: Theme.of(context).textTheme.headline4,
             ),
           ],
         ),
       ),
-      floatingActionButton: Column(
+      floatingActionButton: Row(
     mainAxisAlignment: MainAxisAlignment.end,
     children: <Widget>[
       FloatingActionButton(
