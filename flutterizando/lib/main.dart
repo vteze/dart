@@ -28,18 +28,11 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counterInc = 0;
-  int _counterDec = 0;
+  int _counterBid = 0;
 
-  void _incrementCounter() {
+  void _increaseBid() {
     setState(() {
-      _counterInc++;
-    });
-  }
-
-  void _decrementCounter() {
-    setState(() {
-      _counterDec++;
+      _counterBid+=50;
     });
   }
 
@@ -54,18 +47,8 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'You have pushed the increment this times: ',
-            ),
-            Text(
-              '$_counterInc',
-              style: Theme.of(context).textTheme.headline4,
-            ),
-            Text(
-              'You have pushed the decrement this times: ',
-            ),
-            Text(
-              '$_counterDec',
-              style: Theme.of(context).textTheme.headline4,
+              'My Maximum Bid: $_counterBid',
+              style: Theme.of(context).textTheme.headline5,
             ),
           ],
         ),
@@ -74,17 +57,13 @@ class _MyHomePageState extends State<MyHomePage> {
     mainAxisAlignment: MainAxisAlignment.end,
     children: <Widget>[
       FloatingActionButton(
-        onPressed: _incrementCounter,
+        onPressed: _increaseBid,
         tooltip: 'Increment',
-        child: Icon(Icons.arrow_upward_sharp),
+        child: Icon(Icons.whatshot),
       ),
       SizedBox(
-    width: 10.0,// This trailing comma makes auto-formatting nicer for build methods.
-    ),
-    FloatingActionButton(
-    onPressed: _decrementCounter,
-    tooltip: 'Decrement',
-    child: Icon(Icons.arrow_downward_sharp),
+    width: 160.0,
+        height: 450.0,// This trailing comma makes auto-formatting nicer for build methods.
     ),
     ],
     ),
